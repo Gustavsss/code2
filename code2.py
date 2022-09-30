@@ -13,20 +13,33 @@ for i in range(len(names)):
 
 
 
-annas_data = {
-    'name': 'Anna',
-    'age': 18,
-    'email': 'anna@somemail.com',
-    'school': 'Dobeles VĢ'
-}
+personal_data = [
+    {
+        'name': 'Anna', 
+        'age': 18, 
+        'email': 'anna@somemail.com', 
+        'school': 'Dobeles VĢ',
+        
+        'car': {
+            'brand': 'audi',
+            'year': 2020,
+            'color': 'sarkana',
+            'engine': 2.0
+            }
+    },
+    {
+        'name': 'Oskars', 
+        'age': 20,
+        'email': 'oskars@somemail.com',
+        'school': 'Siguldas VĢ'
+    },
+    {
+        'name': 'Jenifer', 
+        'age': 17,
+        'email': 'jenife@somemail.com',
+        'school': 'Talmācības'     
+    }
+]
 
-oskars_data = {
-    'name': 'Oskars',
-    'age': 20,
-    'email': 'oskars@somemail.com',
-    'school': 'Siguldas VĢ'
-}
-
-personal_data = [annas_data, oskars_data]
-
-print(personal_data[0]['email'])
+for data in personal_data:
+    print(data['email'])
